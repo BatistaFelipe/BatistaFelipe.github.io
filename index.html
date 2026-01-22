@@ -1,305 +1,626 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Marta Batista</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe Marta Batista - Gerente de Suporte em TI</title>
+    <meta name="description" content="Portfólio de Felipe Marta Batista - Gerente de Suporte em TI com experiência em AWS, Linux, VoIP, Python e JavaScript." />
+    <meta name="author" content="Felipe Marta Batista" />
+    <meta name="keywords" content="Felipe Batista, Suporte TI, AWS, Linux, VoIP, Desenvolvimento, Portfólio" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://batistafelipe.github.io/" />
+    <meta property="og:title" content="Felipe Marta Batista - Gerente de Suporte em TI" />
+    <meta property="og:description" content="Portfólio de Felipe Marta Batista - Gerente de Suporte em TI com experiência em AWS, Linux, VoIP, Python e JavaScript." />
+    <meta property="og:image" content="https://batistafelipe.github.io/img/profile.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://batistafelipe.github.io/" />
+    <meta property="twitter:title" content="Felipe Marta Batista - Gerente de Suporte em TI" />
+    <meta property="twitter:description" content="Portfólio de Felipe Marta Batista - Gerente de Suporte em TI com experiência em AWS, Linux, VoIP, Python e JavaScript." />
+    <meta property="twitter:image" content="https://batistafelipe.github.io/img/profile.png" />
+
     <!-- Script do Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fonte Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script>
-        // Configuração do Tailwind para usar a fonte Inter
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                },
+      // Configuração do Tailwind para usar a fonte Inter
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
             },
-        }
+          },
+        },
+      };
     </script>
-    <style>
-        /* Estilo para garantir que o scroll suave funcione em todos os navegadores */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-</head>
-<body class="bg-gray-100 font-sans text-gray-800">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Felipe Marta Batista",
+      "jobTitle": "Gerente de Suporte em TI",
+      "url": "https://batistafelipe.github.io",
+      "email": "felipemartabatista@gmail.com",
+      "image": "https://batistafelipe.github.io/img/profile.png",
+      "sameAs": [
+        "https://linkedin.com/in/felipe-batista-b42364156",
+        "https://github.com/BatistaFelipe"
+      ],
+      "knowsAbout": ["AWS", "Linux", "VoIP", "Python", "JavaScript", "NodeJS", "Docker", "MySQL", "MongoDB"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Unisinos"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-gray-100 font-sans text-gray-800">
     <!-- ==== HEADER / NAV ==== -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-900">
-                <a href="#">Felipe Marta Batista</a>
-            </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#sobre" class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2">Sobre</a>
-                <a href="#experiencia" class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2">Experiência</a>
-                <!--<a href="#projetos" class="text-gray-600 hover:text-blue-600 transition duration-300">Projetos</a>-->
-                <a href="#habilidades" class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2">Habilidades</a>
-                <a href="#contato" class="text-blue-600 border border-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300">Contato</a>
-            </div>
-            <!-- Menu Mobile (simples) -->
-            <div class="md:hidden">
-                <a href="#contato" class="text-blue-600 border border-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300">Contato</a>
-            </div>
-        </nav>
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-gray-900">
+          <a href="#">Felipe Marta Batista</a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a
+            href="#sobre"
+            class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2"
+            >Sobre</a
+          >
+          <a
+            href="#experiencia"
+            class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2"
+            >Experiência</a
+          >
+          <a
+            href="#habilidades"
+            class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2"
+            >Habilidades</a
+          >
+          <a
+            href="#projetos"
+            class="text-gray-600 hover:text-blue-600 transition duration-300 px-4 py-2"
+            >Projetos</a
+          >
+          <a
+            href="#contato"
+            class="text-blue-600 border border-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300"
+            >Contato</a
+          >
+        </div>
+        <!-- Botão Menu Mobile -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
+          aria-label="Menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Menu Mobile (dropdown) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200"
+      >
+        <div class="px-6 py-4 space-y-3">
+          <a
+            href="#sobre"
+            class="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
+            >Sobre</a
+          >
+          <a
+            href="#experiencia"
+            class="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
+            >Experiência</a
+          >
+          <a
+            href="#habilidades"
+            class="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
+            >Habilidades</a
+          >
+          <a
+            href="#projetos"
+            class="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
+            >Projetos</a
+          >
+          <a
+            href="#contato"
+            class="block text-blue-600 border border-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300 text-center"
+            >Contato</a
+          >
+        </div>
+      </div>
     </header>
 
     <!-- ==== SEÇÃO PRINCIPAL (HERO) ==== -->
     <main class="container mx-auto px-6 py-16 md:py-24 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Olá, eu sou Felipe</h1>
-            <p class="text-xl md:text-2xl text-blue-600 font-medium mb-8">Gerente de Suporte em TI</p>
-            <!--<p class="text-lg text-gray-700 mb-10">
-                Sou um profissional apaixonado por tecnologia, focado em criar soluções inovadoras e experiências de usuário incríveis.
-            </p>-->
-            <!-- <a href="#projetos" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
-                Veja meus projetos
-            </a> -->
-        </div>
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+          Olá, eu sou Felipe
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-600 font-medium mb-8">
+          Gerente de Suporte em TI
+        </p>
+      </div>
     </main>
 
     <!-- ==== SEÇÃO SOBRE MIM ==== -->
     <section id="sobre" class="bg-white py-20 md:py-28">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
-                <!-- Imagem de Perfil (Placeholder) -->
-                <div class="flex-shrink-0">
-                    <img src="./img/profile.png" 
-                         alt="Foto de Felipe Marta Batista" 
-                         class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-lg"
-                         onerror="this.src='./img/profile.png'">
-                </div>
-                <!-- Texto "Sobre Mim" -->
-                <div class="text-center md:text-left">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Sobre Mim</h2>
-                    <p class="text-lg text-gray-700 mb-4">
-                        Sou um profissional focado e organizado, com facilidade 
-                        para aprender rapidamente e resolver problemas de maneira prática. Tenho interesse 
-                        em tecnologia, processos e melhoria contínua, sempre buscando soluções eficientes e 
-                        objetivas para cada desafio. Trabalho bem em equipe, mantenho comunicação clara e valorizo 
-                        entregas consistentes e de qualidade, alinhadas às necessidades do projeto ou da empresa.
-                    </p>
-                    <!--<p class="text-lg text-gray-700">
-                        No meu tempo livre, gosto de viajar, ler e contribuir para projetos open-source.
-                    </p>-->
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <div
+          class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12"
+        >
+          <!-- Imagem de Perfil (Placeholder) -->
+          <div class="flex-shrink-0">
+            <img
+              src="./img/profile.png"
+              alt="Foto de Felipe Marta Batista"
+              class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-lg"
+              loading="lazy"
+              onerror="this.src = './img/profile.png'"
+            />
+          </div>
+          <!-- Texto "Sobre Mim" -->
+          <div class="text-center md:text-left">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Sobre Mim</h2>
+            <p class="text-lg text-gray-700 mb-4">
+              Sou um profissional focado e organizado, com facilidade para
+              aprender rapidamente e resolver problemas de maneira prática.
+              Tenho interesse em tecnologia, processos e melhoria contínua,
+              sempre buscando soluções eficientes e objetivas para cada desafio.
+              Trabalho bem em equipe, mantenho comunicação clara e valorizo
+              entregas consistentes e de qualidade, alinhadas às necessidades do
+              projeto ou da empresa.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ==== SEÇÃO EXPERIÊNCIA ==== -->
     <section id="experiencia" class="py-20 md:py-28 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Experiência Profissional</h2>
-            <div class="max-w-3xl mx-auto space-y-12">
-                <!-- Item de Experiência 1 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">1</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Gerente de Suporte em TI</h3>
-                        <p class="text-blue-600 font-medium mb-2">Portaria Remota | 2018 a atual</p>
-                        <p class="text-gray-700">
-                            Responsável pela manutenção de sistemas de rede e ambientes de cloud computing, 
-                            implantação de novas tecnologias, realização de levantamentos técnicos e fornecimento de suporte a usuários e clientes.
-                        </p>
-                    </div>
-                </div>
-                <!-- Item de Experiência 2 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">2</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Auxiliar Técnico</h3>
-                        <p class="text-blue-600 font-medium mb-2">Portaria Remota | 2017 a 2018</p>
-                        <p class="text-gray-700">
-                            Responsável por atender demandas de suporte técnico, realizar manutenções em redes 
-                            e sistemas VoIP, aplicar novas tecnologias, elaborar documentação de processos e 
-                            auxiliar no desenvolvimento e na programação de software proprietário.
-                        </p>
-                    </div>
-                </div>
-                <!-- Item de Experiência 3 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">3</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Operador de Atendimento</h3>
-                        <p class="text-blue-600 font-medium mb-2">Portaria Remota | 2016 a 2017</p>
-                        <p class="text-gray-700">
-                            Atendimento remoto para portarias de condomínios residenciais e comerciais, 
-                            garantindo suporte ágil e eficiente às demandas dos moradores e administradores.
-                        </p>
-                    </div>
-                </div>
-                <!-- Item de Experiência 4 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">4</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Jovem Aprendiz (Projeto Pescar)</h3>
-                        <p class="text-blue-600 font-medium mb-2">Vonpar S/A | 2015</p>
-                        <p class="text-gray-700">
-                            Seis meses de formação com foco em vendas e três meses de experiência prática no setor de crédito e cobrança.
-                        </p>
-                    </div>
-                </div>
-                <!-- Item Educação 1 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-gray-300 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">🎓</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Análise e Desenvolvimento de Sistemas</h3>
-                        <p class="text-blue-600 font-medium mb-2">Unisinos São Leopoldo, RS | Cursando</p>
-                        <p class="text-gray-700">
-                            Tecnólogo: Práticas da engenharia de software, como análise de requisitos, modelagem de 
-                            dados, gerência de projetos, segurança cibernética, testes e qualidade de softwares.
-                        </p>
-                    </div>
-                </div>
-                <!-- Item Educação 2 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-gray-300 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">🎓</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Formação Intensiva Linux - 96 Horas</h3>
-                        <p class="text-blue-600 font-medium mb-2">Sisnema Porto Alegre, RS | 2018</p>
-                        <p class="text-gray-700">
-                            Curso: Voltado a configurar e manter um servidor baseado no sistema operacional 
-                            Linux, abordando também as configurações dos serviços de SAMBA, Diretório LDAP, Servidor WEB Apache e FTP.
-                        </p>
-                    </div>
-                </div>
-                <!-- Item Educação 3 -->
-                <div class="flex">
-                    <div class="mr-6">
-                        <div class="bg-gray-300 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">🎓</div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-900">Técnico em Tecnologia da Informação</h3>
-                        <p class="text-blue-600 font-medium mb-2">QI Faculdade e Escola Técnica Gravataí, RS | 2016 a 2017</p>
-                        <p class="text-gray-700">
-                            Curso Técnico: Focado no desenvolvimento de sistemas para diversas plataformas (web, dispositivos móveis, computadores pessoais).
-                        </p>
-                    </div>
-                </div>
-                
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Experiência Profissional
+        </h2>
+        <div class="max-w-3xl mx-auto space-y-12">
+          <!-- Item de Experiência 1 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                1
+              </div>
             </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Gerente de Suporte em TI
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">
+                Portaria Remota | 2018 a atual
+              </p>
+              <p class="text-gray-700">
+                Responsável pela manutenção de sistemas de rede e ambientes de
+                cloud computing, implantação de novas tecnologias, realização de
+                levantamentos técnicos e fornecimento de suporte a usuários e
+                clientes.
+              </p>
+            </div>
+          </div>
+          <!-- Item de Experiência 2 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                2
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Auxiliar Técnico
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">
+                Portaria Remota | 2017 a 2018
+              </p>
+              <p class="text-gray-700">
+                Responsável por atender demandas de suporte técnico, realizar
+                manutenções em redes e sistemas VoIP, aplicar novas tecnologias,
+                elaborar documentação de processos e auxiliar no desenvolvimento
+                e na programação de software proprietário.
+              </p>
+            </div>
+          </div>
+          <!-- Item de Experiência 3 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                3
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Operador de Atendimento
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">
+                Portaria Remota | 2016 a 2017
+              </p>
+              <p class="text-gray-700">
+                Atendimento remoto para portarias de condomínios residenciais e
+                comerciais, garantindo suporte ágil e eficiente às demandas dos
+                moradores e administradores.
+              </p>
+            </div>
+          </div>
+          <!-- Item de Experiência 4 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                4
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Jovem Aprendiz (Projeto Pescar)
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">Vonpar S/A | 2015</p>
+              <p class="text-gray-700">
+                Seis meses de formação com foco em vendas e três meses de
+                experiência prática no setor de crédito e cobrança.
+              </p>
+            </div>
+          </div>
+          <!-- Item Educação 1 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-gray-300 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                🎓
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Análise e Desenvolvimento de Sistemas
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">
+                Unisinos São Leopoldo, RS | Cursando
+              </p>
+              <p class="text-gray-700">
+                Tecnólogo: Práticas da engenharia de software, como análise de
+                requisitos, modelagem de dados, gerência de projetos, segurança
+                cibernética, testes e qualidade de softwares.
+              </p>
+            </div>
+          </div>
+          <!-- Item Educação 2 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-gray-300 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                🎓
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Formação Intensiva Linux - 96 Horas
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">
+                Sisnema Porto Alegre, RS | 2018
+              </p>
+              <p class="text-gray-700">
+                Curso: Voltado a configurar e manter um servidor baseado no
+                sistema operacional Linux, abordando também as configurações dos
+                serviços de SAMBA, Diretório LDAP, Servidor WEB Apache e FTP.
+              </p>
+            </div>
+          </div>
+          <!-- Item Educação 3 -->
+          <div class="flex">
+            <div class="mr-6">
+              <div
+                class="bg-gray-300 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold"
+              >
+                🎓
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                Técnico em Tecnologia da Informação
+              </h3>
+              <p class="text-blue-600 font-medium mb-2">
+                QI Faculdade e Escola Técnica Gravataí, RS | 2016 a 2017
+              </p>
+              <p class="text-gray-700">
+                Curso Técnico: Focado no desenvolvimento de sistemas para
+                diversas plataformas (web, dispositivos móveis, computadores
+                pessoais).
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- ==== SEÇÃO PROJETOS ====
-    <section id="projetos" class="py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Projetos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                Projeto 1 
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Projeto+1" 
-                         alt="Imagem do Projeto 1" 
-                         class="w-full h-48 object-cover"
-                         onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Projeto+1'">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Nome do Projeto 1</h3>
-                        <p class="text-gray-700 mb-4">
-                            Uma breve descrição do projeto, as tecnologias usadas e o problema que ele resolve.
-                        </p>
-                        <a href="#" class="text-blue-600 font-medium hover:underline">Ver no GitHub &rarr;</a>
-                    </div>
-                </div>
-                Projeto 2 
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Projeto+2" 
-                         alt="Imagem do Projeto 2" 
-                         class="w-full h-48 object-cover"
-                         onerror="this.src='https://placehold.co/600x400/10b981/ffffff?text=Projeto+2'">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Nome do Projeto 2</h3>
-                        <p class="text-gray-700 mb-4">
-                            Uma breve descrição do projeto, as tecnologias usadas e o problema que ele resolve.
-                        </p>
-                        <a href="#" class="text-blue-600 font-medium hover:underline">Ver Demo &rarr;</a>
-                    </div>
-                </div>
-                Projeto 3 
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/600x400/ec4899/ffffff?text=Projeto+3" 
-                         alt="Imagem do Projeto 3" 
-                         class="w-full h-48 object-cover"
-                         onerror="this.src='https://placehold.co/600x400/ec4899/ffffff?text=Projeto+3'">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Nome do Projeto 3</h3>
-                        <p class="text-gray-700 mb-4">
-                            Uma breve descrição do projeto, as tecnologias usadas e o problema que ele resolve.
-                        </p>
-                        <a href="#" class="text-blue-600 font-medium hover:underline">Ver no GitHub &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- -->
     <!-- ==== SEÇÃO HABILIDADES ==== -->
     <section id="habilidades" class="py-20 md:py-28 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Principais Habilidades</h2>
-            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-3">
-                <!-- Habilidades (Exemplos) -->
-                <span class="bg-green-100 text-green-800 text-lg font-medium px-5 py-2 rounded-full">Inglês</span>
-                <span class="bg-green-100 text-green-800 text-lg font-medium px-5 py-2 rounded-full">Sistemas Operacionais</span>
-                <span class="bg-green-100 text-green-800 text-lg font-medium px-5 py-2 rounded-full">Redes de Computadores</span>
-                <span class="bg-blue-100 text-blue-800 text-lg font-medium px-5 py-2 rounded-full">Programação</span>
-                <span class="bg-blue-100 text-blue-800 text-lg font-medium px-5 py-2 rounded-full">Cloud Computing</span>
-            </div>
+      <div class="mt-12 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Tecnologias e Ferramentas
+        </h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span
+            class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full"
+            >AWS</span
+          >
+          <span
+            class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Linux</span
+          >
+          <span
+            class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full"
+            >VoIP</span
+          >
+          <span
+            class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Asterisk</span
+          >
+          <span
+            class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full"
+            >MikroTik</span
+          >
+          <span
+            class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Zabbix</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Python</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 text-sm font-medium px-4 py-2 rounded-full"
+            >JavaScript</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 text-sm font-medium px-4 py-2 rounded-full"
+            >NodeJS</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Bash</span
+          >
+          <span
+            class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Git</span
+          >
+          <span
+            class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full"
+            >GitHub</span
+          >
+          <span
+            class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Windows Server</span
+          >
+          <span
+            class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full"
+            >Docker</span
+          >
+          <span
+            class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full"
+            >MySQL</span
+          >
+          <span
+            class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full"
+            >MongoDB</span
+          >
+          <span
+            class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full"
+            >PostgreSQL</span
+          >
         </div>
+      </div>
+    </section>
+
+    <!-- ==== SEÇÃO PROJETOS ==== -->
+    <section id="projetos" class="py-20 md:py-28 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Projetos
+        </h2>
+        <div class="flex justify-center gap-8 flex-wrap">
+          <!-- Projeto 1 -->
+          <div
+            class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 w-full max-w-md"
+          >
+            <img
+              src="https://placehold.co/600x400/FFF3E0/FF6F00?text=MeAjudeALer"
+              alt="Screenshot do projeto MeAjudeALer - ferramenta para facilitar leitura digital"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/FFF3E0/FF6F00?text=MeAjudeALer'
+              "
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-3">
+                MeAjudeALer
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Uma ferramenta simples para facilitar a leitura digital e o
+                aprendizado, eliminando distrações.
+              </p>
+              <a
+                href="https://github.com/BatistaFelipe/MeAjudeALer"
+                class="text-blue-600 font-medium hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver no GitHub &rarr;</a
+              ><br />
+              <a
+                href="https://meajudealer.com/"
+                class="text-blue-600 font-medium hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visite o site &rarr;</a
+              >
+            </div>
+          </div>
+          <!-- Projeto 2
+          <div
+            class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/10b981/ffffff?text=Projeto+2"
+              alt="Imagem do Projeto 2"
+              class="w-full h-48 object-cover"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/10b981/ffffff?text=Projeto+2'
+              "
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-3">
+                Nome do Projeto 2
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Uma breve descrição do projeto, as tecnologias usadas e o
+                problema que ele resolve.
+              </p>
+              <a href="#" class="text-blue-600 font-medium hover:underline"
+                >Ver Demo &rarr;</a
+              >
+            </div>
+          </div>
+          Projeto 3
+          <div
+            class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/ec4899/ffffff?text=Projeto+3"
+              alt="Imagem do Projeto 3"
+              class="w-full h-48 object-cover"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/ec4899/ffffff?text=Projeto+3'
+              "
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-3">
+                Nome do Projeto 3
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Uma breve descrição do projeto, as tecnologias usadas e o
+                problema que ele resolve.
+              </p>
+              <a href="#" class="text-blue-600 font-medium hover:underline"
+                >Ver no GitHub &rarr;</a
+              >
+            </div>
+          </div> -->
+        </div>
+      </div>
     </section>
 
     <!-- ==== SEÇÃO CONTATO ==== -->
     <section id="contato" class="py-20 md:py-28 bg-blue-700 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-6">Vamos conversar!</h2>
-            <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-                Estou sempre aberto a novas oportunidades e projetos interessantes. Sinta-se à vontade para entrar em contato.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                <!-- Email -->
-                <a href="mailto:felipemartabatista@gmail.com" class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
-                    E-mail
-                </a>
-                <!-- LinkedIn -->
-                <a href="http://linkedin.com/in/felipe-batista-b42364156" class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
-                    LinkedIn
-                </a>
-                <!-- GitHub -->
-                <a href="http://github.com/BatistaFelipe" class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
-                    GitHub
-                </a>
-            </div>
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6 text-white">Vamos conversar!</h2>
+        <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          Estou sempre aberto a novas oportunidades e projetos interessantes.
+          Sinta-se à vontade para entrar em contato.
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-6"
+        >
+          <!-- Email -->
+          <a
+            href="mailto:felipemartabatista@gmail.com"
+            class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg"
+          >
+            E-mail
+          </a>
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/felipe-batista-b42364156"
+            class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <!-- GitHub -->
+          <a
+            href="https://github.com/BatistaFelipe"
+            class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- ==== RODAPÉ ==== -->
     <footer class="bg-gray-900 text-gray-400 py-10">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 Felipe Marta Batista. Todos os direitos reservados.</p>
-            <p class="text-sm mt-2">Feito com Tailwind CSS.</p>
-        </div>
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2026 Felipe Marta Batista. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Feito com Tailwind CSS.</p>
+      </div>
     </footer>
 
-</body>
+    <!-- Script do Menu Mobile -->
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Fecha o menu ao clicar em um link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
 </html>
