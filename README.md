@@ -64,13 +64,23 @@ Depois acesse: `http://localhost:8000`
 ```
 BatistaFelipe.github.io/
 ├── index.html          # Página principal
-├── style.css           # Estilos personalizados
-├── CLAUDE.md           # Instruções para análise
 ├── CNAME               # Configuração de domínio customizado
 └── img/
-    ├── favicon.ico     # Ícone do site
-    └── profile.png     # Foto de perfil
+    ├── favicon.ico     # Ícone do site (otimizado: 16, 32 e 48px)
+    ├── profile.png     # Foto de perfil (fallback para navegadores antigos)
+    └── profile.webp    # Foto de perfil em WebP (formato moderno e leve)
 ```
+
+## ⚡ Otimizações Aplicadas
+
+| Item | Antes | Depois | Redução |
+|------|-------|--------|---------|
+| `profile.png` | 359 KB | 66 KB | −82% |
+| `profile.webp` | — | 5 KB | novo |
+| `favicon.ico` | 141 KB | 1 KB | −99% |
+| HTML semântico | `<main>` só no hero | `<main>` em todo o conteúdo | corrigido |
+| Acessibilidade | sem `aria-expanded` | `aria-expanded` no menu mobile | corrigido |
+| SEO | sem `canonical` | `<link rel="canonical">` | adicionado |
 
 ## 📞 Contato
 
